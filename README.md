@@ -26,15 +26,19 @@ https://ubuntu-mate.org/
 ## Update and upgrade
 - Open the terminal and copy and paste the command below and press enter.
 ```
-sudo apt-get update && apt-get upgrade
+sudo apt-get update
+sudo apt-get upgrade -y
 ```
 
 ## Install virtualbox
 - Open the terminal and copy and paste the command below and press enter.
 ```
-sudo sh -c "echo 'deb http://download.virtualbox.org/virtualbox/debian '$(lsb_release -cs)' contrib non-free' > /etc/apt/sources.list.d/virtualbox.list" && wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | sudo apt-key add - && sudo apt-get update && sudo apt-get install virtualbox-5.0
+sudo apt-get install -y wget
+sudo sh -c "echo 'deb http://download.virtualbox.org/virtualbox/debian '$(lsb_release -cs)' contrib non-free' > /etc/apt/sources.list.d/virtualbox.list"
+wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | sudo apt-key add -
+sudo apt-get update
+sudo apt-get install -y virtualbox-5.0
 ```
-
 - Wait for the process to finish
 - Install xp virtual machine
 - Install guest additions
