@@ -49,12 +49,12 @@ sudo apt-get install -y virtualbox-5.0
 ```
 sudo add-apt-repository ppa:gns3/ppa
 sudo apt-get update
-sudo apt-get install gns3-gui
+sudo apt-get install -y gns3-gui
 
 # IOU support
 sudo dpkg --add-architecture i386
 sudo apt-get update
-sudo apt-get install gns3-iou
+sudo apt-get install -y gns3-iou
 ```
 
 ## Install MP3 plugins
