@@ -61,4 +61,4 @@ sudo apt-get install -y ubuntu-restricted-extras
 
 ## Contributing
 Please click the link below to follow contribution instructions.
-> https://github.com/cemax/ubuntu-mate-bootstrap
+> https://github.com/cemax/contributing/blob/master/README.md
