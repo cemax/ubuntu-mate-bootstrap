@@ -28,15 +28,18 @@ sudo apt-get update && apt-get upgrade
 
 ## Install virtualbox
 - Open the terminal and copy and paste the command below and press enter
+
 '''
 sudo sh -c "echo 'deb http://download.virtualbox.org/virtualbox/debian '$(lsb_release -cs)' contrib non-free' > /etc/apt/sources.list.d/virtualbox.list" && wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | sudo apt-key add - && sudo apt-get update && sudo apt-get install virtualbox-5.0
 '''
+
 - Wait for the process to finish
 - Install xp virtual machine
 - Install guest additions
 - Install Virtualbox extension pack
 
 ## Install GNS3
+
 '''
 sudo add-apt-repository ppa:gns3/ppa
 sudo apt-get update
@@ -49,6 +52,7 @@ sudo apt-get install gns3-iou
 '''
 
 ## Install MP3 plugins
+
 '''
 sudo apt-get install ubuntu-restricted-extras
 '''
